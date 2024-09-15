@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem 1.5rem;
+}
+
+.section .container{
+  width: 100%;
+  display: block;
+  height: inherit;
+}
+
+.section .container .wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+}
+
+.container .inner-box {
+  padding: 1.3rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  height: 90%;
+}
+
+.container .inner-box.info {
+  width: 30%;
+  border: none;
+  align-items: unset;
+}
+
+.container .inner-box.game-box {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+}
+
+.game-box .column{
+  width: 30%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  min-height: 250px;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  margin: 0 0.5rem;
+}
+
+.game-box .column:first-child{
+  margin-left: 0;
+}
+
+.game-box .column:last-child{
+  margin-right: 0;
+}
+
+.column .col-head{
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.column h2{
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.column .hero-list{
+  width: 100%;
+  min-height: 250px;
+  height: 624px;
+}
+
+.column .hero-list.active{
+  background-color: rgb(63, 197, 254);
+}
+
+.column .hero-list .hero-item{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  margin-bottom: 0.55rem;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.hero-item p{
+  margin: 0;
+  padding: 0;
+  padding-left: 1rem;
+}
+
+.hero-item img{
+  width: 25px;
+}
+
+.time-box{
+  width: 100%;
+  text-align: center;
+  padding: 0.55rem 0;
+}
+
+.time-box p{
+  font-size: 60px;
+  line-height: 62px;
+  color: #000;
+  margin: 0;
+}
+
+.time-box span{
+  font-size: 13px;
+  color: #545454;
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #959caa;
+  margin: 2rem 0;
+}
+
+.control{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control .btn{
+  outline: none;
+  box-shadow: none;
+  padding: 0.87rem 1.5rem;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(37, 9, 117);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.disabled{
+  pointer-events: none;
+  opacity: 0.35;
+}
+
